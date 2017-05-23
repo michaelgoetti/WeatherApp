@@ -130,7 +130,7 @@
         
         $(".location-box").html(json.city + ", " + json.regionName + "  " + json.zip);
 
-        $(".container").css("background-image", "url('http://res.cloudinary.com/mgoetti/image/upload/v1495463509/" + icon + "j.jpg')");
+        $(".container").css("background-image", "url('https://res.cloudinary.com/mgoetti/image/upload/v1495463509/" + icon + "j.jpg')");
         
         $("#temp-num").html(Math.round(currTemp) + "&deg;");
         $("#feels-like").html("feels like " + Math.round(feelsLike) + "&deg;");
@@ -145,7 +145,7 @@
         $("li:nth-child(5)").html("Sunrise: " + sunrise);
         $("li:nth-child(6)").html("Sunset: " + sunset);
        
-        $("#weather-icon-box").html("<img src='http://res.cloudinary.com/mgoetti/image/upload/v1495229661/" + icon + ".svg' />");
+        $("#weather-icon-box").html("<img src='https://res.cloudinary.com/mgoetti/image/upload/v1495229661/" + icon + ".svg' />");
         
         if (currTemp > 99) {
           $("#temp-num").css({
@@ -159,7 +159,7 @@
         // forecast row box section
         for (i=0; i<8; i++) {
           
-          var imgString = "<img src='http://res.cloudinary.com/mgoetti/image/upload/v1495229661/" + darkSky.daily.data[i].icon + ".svg' />";
+          var imgString = "<img src='https://res.cloudinary.com/mgoetti/image/upload/v1495229661/" + darkSky.daily.data[i].icon + ".svg' />";
           
           var loString = "<div class='lo-temp-fc' id='lo-temp-fc" + i + "'>" + Math.round(darkSky.daily.data[i].temperatureMin) + "&deg;</div>";
           
