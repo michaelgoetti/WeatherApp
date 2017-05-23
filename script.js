@@ -25,6 +25,19 @@
         var pressure = Math.round(100*(darkSky.currently.pressure * 0.02953))/100;
         var humidity = Math.round(darkSky.currently.humidity * 100); 
         var icon = darkSky.currently.icon;   
+        
+        // ALERTS
+        var alert;
+
+        if (darkSky.alerts) {
+          for(i=0; i<darkSky.alerts.length; i++) {
+            if(darkSky.alerts[i].severity === 'watch' || darkSky.alerts[i].severity === 'warning') {
+              alert = darkSky.alerts[i].uri;
+            }
+          }
+        }
+
+        $(".alert").html("<a href=" + alert + ">Severe weather alert</a>");
 
         var iconArray = [];
 

@@ -6,7 +6,7 @@
 .container {
   margin: 20px auto;
   max-width: 900px;
-  height: 550px;
+  min-height: 550px;
   background: gray;
   border-radius: 10px;
 }
@@ -162,8 +162,20 @@ ul {
   text-align: center;
 }
 
-a:link, a:visited {
+.footer a:link, .footer a:visited {
     color: white;
+}
+
+.alert {
+  margin: 0px;
+  padding: 0px;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.alert a:link, .alert a:visited {
+  color: red;
 }
 
 
