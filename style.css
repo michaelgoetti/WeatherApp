@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 900px;
+  height: 550px;
+  background: gray;
+  border-radius: 10px;
+}
+
+.row {
+  margin: 0px auto;
+  width: 550px;
+  padding: 40px 0px 0px 0px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.lg-top-boxes {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  padding: 10px;
+  color: black;
+  vertical-align: middle;
+  background: white;
+  background-color: rgba(255,255,255,0.85);
+  border-radius: 15px;
+}
+
+#temp-num {
+  font-size: 72px;
+  padding: 0px 0px 0px 20px;
+}
+
+#feels-like {
+  font-size: 16px;
+  margin: -20px;
+  font-style: italic;
+}
+
+#weather-prop-list-box {
+  padding: 0px 0px 0px -20px;
+}
+
+.forecast-week-data-box, .forecast-row-box, .forecast-day-data-box, .location-box {
+  display: block;
+  width: 500px;
+  margin: 10px;
+  text-align: center;
+}
+
+.forecast-row-box > div {
+  padding: 12px 15px 10px 10px;
+  position: relative;
+}
+
+.lo-temp-fc {
+  position: absolute;
+    left: 2px;
+    top: 1px;
+}
+
+.hi-temp-fc {
+  position: absolute;
+    right: 2px;
+    top: 1px;
+}
+
+.precip-fc {
+  position: absolute;
+    right: 2px;
+    bottom: 1px;
+}
+
+#pct {
+  font-size: 10px;
+}
+
+#forecast-box {
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+}
+
+.forecast-items {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  margin: 0px; 
+  vertical-align: top;
+
+}
+
+#forecast-box:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+#weather-icon-box {
+  line-height: 120px;
+}
+
+#weather-icon-box img {
+  vertical-align: middle;
+}
+
+#weather-temp-box {
+  transition: all .1s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+#weather-temp-box:hover {
+  transform: scale(1.1);
+}
+
+#fOrC {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#temp-num {
+  font-weight: bold;
+}
+
+.location-box {
+  font-weight: bold;
+  font-size: 36px;
+  background: white;
+  background-color: rgba(255,255,255,0.85);
+  border-radius: 5px;
+}
+
+.forecast-day-data-box, .forecast-items, .forecast-week-data-box {
+  background: white;
+  background-color: rgba(255,255,255,0.85);
+  border-radius: 5px;
+}
+
+
