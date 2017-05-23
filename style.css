@@ -151,7 +151,7 @@ ul {
   border-radius: 5px;
 }
 
-.forecast-day-data-box, .forecast-items, .forecast-week-data-box {
+.forecast-day-data-box, .forecast-items, .forecast-week-data-box, .alert {
   background: white;
   background-color: rgba(255,255,255,0.85);
   border-radius: 5px;
@@ -167,11 +167,11 @@ ul {
 }
 
 .alert {
-  margin: 0px;
+  margin: 0px auto;
   padding: 0px;
   font-size: 24px;
   text-align: center;
-  text-decoration: underline;
+  width: 250px;
 }
 
 .alert a:link, .alert a:visited {
