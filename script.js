@@ -4,7 +4,7 @@
   $( document ).ready(function() {
 
     //call api for local coordinates, city, state
-    $.getJSON("http://ip-api.com/json", function(json) {
+    $.getJSON("https://ip-api.com/json", function(json) {
       console.log(json);
       var lat = json.lat;
       var lon = json.lon;
