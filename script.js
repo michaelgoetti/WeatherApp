@@ -4,13 +4,14 @@
   $( document ).ready(function() {
 
     //call api for local coordinates, city, state
-    $.getJSON("https://ip-api.com/json", function(json) {
+    $.getJSON("https://ipapi.co/json", function(json) {
+    //$.getJSON("http://ip-api.com/json", function(json) {
       console.log(json);
-      var lat = json.lat;
-      var lon = json.lon;
+      var lat = json.latitude;
+      var lon = json.longitude;
       var city = json.city;
       var state = json.region;
-      var zip = json.zip;
+      var zip = json.postal;
       var url = "https://cors-everywhere.herokuapp.com/https://api.darksky.net/forecast/9ce0f25e3cbd60e8f739e602ada1e60c/" + lat + "," + lon;
       
       //call darkSky api for weather data
