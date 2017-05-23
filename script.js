@@ -128,7 +128,7 @@
           
         //update main view
         
-        $(".location-box").html(json.city + ", " + json.regionName + "  " + json.zip);
+        $(".location-box").html(json.city + ", " + json.region + "  " + json.postal);
 
         $(".container").css("background-image", "url('https://res.cloudinary.com/mgoetti/image/upload/v1495463509/" + icon + "j.jpg')");
         
