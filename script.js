@@ -1,4 +1,6 @@
 
+  $(".loader-box").siblings().hide();
+
   //DOCUMENT READY//
 
   $( document ).ready(function() {
@@ -25,6 +27,11 @@
         var pressure = Math.round(100*(darkSky.currently.pressure * 0.02953))/100;
         var humidity = Math.round(darkSky.currently.humidity * 100); 
         var icon = darkSky.currently.icon;   
+
+        // remove loader div
+
+        $(".loader-box").siblings().show();
+        $(".loader-box").remove();
         
         // ALERTS
         var alert;
@@ -40,9 +47,7 @@
         }
 
         if (alertExist) {
-          $(".alert").html("<a href=" + alert + ">Severe weather alert</a>");
-        } else {
-          $( ".alert" ).remove();
+          $( ".row" ).prepend("<div class='alert'><a href=" + alert + ">Severe weather alert</a></div>");
         }
 
         var iconArray = [];
