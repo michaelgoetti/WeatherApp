@@ -28,16 +28,22 @@
         
         // ALERTS
         var alert;
+        var alertExist;
 
         if (darkSky.alerts) {
           for(i=0; i<darkSky.alerts.length; i++) {
             if(darkSky.alerts[i].severity === 'watch' || darkSky.alerts[i].severity === 'warning') {
               alert = darkSky.alerts[i].uri;
+              alertExist = true;
             }
           }
         }
 
-        $(".alert").html("<a href=" + alert + ">Severe weather alert</a>");
+        if (alertExist) {
+          $(".alert").html("<a href=" + alert + ">Severe weather alert</a>");
+        } else {
+          $( ".alert" ).remove();
+        }
 
         var iconArray = [];
 
