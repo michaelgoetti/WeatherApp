@@ -211,5 +211,11 @@ ul {
     100% { transform: rotate(360deg); }
 }
 
+#loader-text {
+  position: absolute;
+  top: 180px;
+  left: 12px;
+}
+
 
 
