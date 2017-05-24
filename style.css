@@ -188,9 +188,8 @@ ul {
   border-radius: 15px;
   width: 170px;
   height: 170px;
-  position: absolute;
-  top: 180px;
-  left: 273px;
+  position: relative;
+  margin: 180px auto;
 
 }
 
@@ -202,6 +201,9 @@ ul {
     height: 150px;
     animation: spin 1.5s linear infinite;
     margin: 10px auto;
+    position: absolute;
+    top: 0px; 
+    left: 10px; 
 }
 
 @keyframes spin {
