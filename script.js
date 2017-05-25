@@ -154,7 +154,7 @@
         
         $(".location-box").html(json.city + ", " + json.region + "  " + json.postal);
 
-        $(".container").css("background-image", "url('https://res.cloudinary.com/mgoetti/image/upload/v1495463509/" + icon + "j.jpg')");
+        $(".container").css({"background-image": "url('https://res.cloudinary.com/mgoetti/image/upload/v1495463509/" + icon + "j.jpg')", "background-size": "cover"});
         
         $("#temp-num").html(Math.round(currTemp) + "&deg;");
         $("#feels-like").html("feels like " + Math.round(feelsLike) + "&deg;");
