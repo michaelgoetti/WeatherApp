@@ -154,6 +154,8 @@
         
         $(".location-box").html(json.city + ", " + json.region + "  " + json.postal);
 
+        if (icon === 'partly-cloudy-night') {icon = 'cloudy-night';}
+
         $(".container").css({"background-image": "url('https://res.cloudinary.com/mgoetti/image/upload/v1495463509/" + icon + "j.jpg')", "background-size": "cover"});
         
         $("#temp-num").html(Math.round(currTemp) + "&deg;");
